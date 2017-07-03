@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Anton" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://fb.me/react-15.0.0.js"></script>
+    <script src="https://fb.me/react-dom-15.0.0.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.0.20/browser.min.js"></script>-->
+    <link rel="stylesheet" href="./styleClear/clear-style.css">
+    <link rel="stylesheet" href="./style/index.css">
+  </head>
+  <body>
+    <div class="blocks-container">
+
+      <div class="app-menu">
+          <p class="app-menu__main-item">Log in</p>
+        <div class="app-menu__second-section">
+          <div  class="app-menu__second-section__sec-item">
+            <p>News</p>
+          </div>
+          <div class="app-menu__second-section__sec-item">
+            <p>Gallery</p>
+          </div>
+          <div class="app-menu__second-section__sec-item">
+            <p>Feedback</p>
+          </div>
+          <div class="app-menu__second-section__sec-item">
+            <p>About us</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="header">
+        <div class="header__second-div">
+          <p class="header__second-div__title">Title or news name</p>
+          <p class="header__second-div__text">
+            Summers span decades. Winters can last a lifetime. And the struggle for the Iron Throne continues.
+            It stretches from the south, where heat breeds plots, lusts and intrigues, to the vast and savage eastern lands,
+            where a young queen raises an army. All the while, in the frozen north, an 800-foot wall of ice precariously protects
+             the war-ravaged kingdom </p>
+        </div>
+      </div>
+      <div class="content">
+        <p class="content__title-text">
+          GALLERY
+        </p>
+        <p class="content__title-second-text">
+          My slider
+        </p>
+      <div class="move-buttons-div">
+        <p id="left-slider-button">
+          <i class="material-icons">keyboard_arrow_left</i>
+          <p/>
+        <p id="right-slider-button">
+          <i class="material-icons">keyboard_arrow_right</i>
+        <p/>
+    </div>
+        <div class="slider-box" id="slider-box">
+          <div class="slider-box__slider-content">
+            <div class="slider-box__slider-content-list" id="content"></div>
+          </div>
+      </div>
+    </div>
+      <div class="form">
+        <p class="form__title">
+          Login and go to new adventures
+        </p>
+        <form class="form__div">
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__div__input email"
+            required
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            class="form__div__input password"
+            required
+          >
+          <button class="form__div__button"type="submit" >
+            Log in
+          </button>
+        </form>
+    </div>
+    <div id="root"></div>
+  </div>
+
+  <script tyle="text/babel" src="./js/slider.js"></script>
+  </body>
+</html>

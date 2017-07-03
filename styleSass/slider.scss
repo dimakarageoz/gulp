@@ -1,0 +1,55 @@
+.slider-box {
+  width: 800px;
+  height: 470px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-size: cover;
+  &__slider-content {
+    position: absolute;
+    width: 800px;
+    height: 470px;
+    overflow: hidden;
+    z-index: 1;
+    &-list {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      left: 0px;
+      right: 0px;
+    }
+  }
+  &__scroll-button {
+    &-left {
+      height: 100%;
+      width: 130px;
+      background: rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+    &-right {
+      height: 100%;
+      width: 130px;
+      background: rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+.move-buttons-div {
+    display: flex;
+    flex-direction: row;
+}
+#left-slider-button, #right-slider-button {
+  margin: 0px 20px 0px;
+  cursor: pointer;
+  &>i {
+    color: rgba(255,255,255,0.3);
+    font-size: 50px;
+  }
+}

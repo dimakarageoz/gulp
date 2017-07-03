@@ -1,0 +1,13 @@
+@import './form.scss';
+@import './slider.scss';
+@import './header.scss';
+@import './content.scss';
+@import './app-menu.scss';
+* {
+  font-family: 'ABeeZee', sans-serif;
+}
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

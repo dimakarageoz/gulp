@@ -1,0 +1,188 @@
+.form {
+  width: 100%;
+  height: 80vh;
+  background: #1a1917;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form__title {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #d1d1d1; }
+  .form__div {
+    margin-top: 40px;
+    width: 600px;
+    border: 4px solid #d1d1d1;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form__div__input {
+      display: block;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px auto;
+      height: 60px;
+      border: 4px solid #d1d1d1;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0);
+      color: #d1d1d1; }
+    .form__div__button {
+      margin-top: 45px;
+      width: 100%;
+      height: 60px;
+      border: 4px solid #d1d1d1;
+      color: #d1d1d1;
+      background: rgba(255, 255, 255, 0);
+      font-size: 35px;
+      border-radius: 25px; }
+      .form__div__button:hover {
+        background: #d1d1d1;
+        color: #b77110; }
+
+.slider-box {
+  width: 800px;
+  height: 470px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-size: cover; }
+  .slider-box__slider-content {
+    position: absolute;
+    width: 800px;
+    height: 470px;
+    overflow: hidden;
+    z-index: 1; }
+    .slider-box__slider-content-list {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      left: 0px;
+      right: 0px; }
+  .slider-box__scroll-button-left {
+    height: 100%;
+    width: 130px;
+    background: rgba(0, 0, 0, 0.1); }
+    .slider-box__scroll-button-left:hover {
+      background: rgba(0, 0, 0, 0.4); }
+  .slider-box__scroll-button-right {
+    height: 100%;
+    width: 130px;
+    background: rgba(0, 0, 0, 0.1); }
+    .slider-box__scroll-button-right:hover {
+      background: rgba(0, 0, 0, 0.4); }
+
+.move-buttons-div {
+  display: flex;
+  flex-direction: row; }
+
+#left-slider-button, #right-slider-button {
+  margin: 0px 20px 0px;
+  cursor: pointer; }
+  #left-slider-button > i, #right-slider-button > i {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 50px; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://www.gandex.ru/upl/oboi/gandex.ru-18509_889fe17f79d5994f27cd60eddcd23d40.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .header__second-div {
+    width: 450px;
+    height: 250px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    color: white; }
+    .header__second-div__title {
+      font-family: 'Anton', sans-serif;
+      font-size: 50px;
+      margin: 10px auto;
+      -webkit-transform: scaleY(2);
+      -ms-transform: scaleY(2);
+      -o-transform: scaleY(2);
+      transform: scaleY(2); }
+    .header__second-div__text {
+      margin: 30px auto;
+      font-size: 19px;
+      word-spacing: 6px;
+      text-align: justify; }
+
+.header__img {
+  width: 100%;
+  z-index: 500;
+  height: 100%; }
+
+.content {
+  width: 100%;
+  height: 100%;
+  background: #1a1917;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .content__title-text {
+    font-size: 46px;
+    margin: 70px;
+    margin-bottom: 30px;
+    color: #b77110; }
+  .content__title-second-text {
+    font-size: 160px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.3); }
+
+.app-menu {
+  color: white;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 9999; }
+  .app-menu__second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    margin-right: 150px; }
+    .app-menu__second-section__sec-item {
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 100%;
+      align-items: center;
+      font-size: 14px;
+      text-align: center;
+      box-sizing: border-b2ox; }
+      .app-menu__second-section__sec-item:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.1); }
+  .app-menu__main-item {
+    margin-left: 150px;
+    font-size: 15px;
+    border: 1px white solid;
+    border-radius: 25px;
+    padding: 12px; }
+    .app-menu__main-item:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+
+* {
+  font-family: 'ABeeZee', sans-serif; }
+
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

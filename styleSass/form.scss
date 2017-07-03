@@ -1,0 +1,52 @@
+$font-white: #d1d1d1;
+$gold: #b77110;
+
+.form {
+  width: 100%;
+  height: 80vh;
+  background: #1a1917;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin-top: 20px;
+    font-size: 20px;
+    color: $font-white;
+  }
+  &__div {
+    margin-top: 40px;
+    width: 600px;
+    border: 4px solid $font-white;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input{
+      display: block;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px auto;
+      height: 60px;
+      border: 4px solid $font-white;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0);
+      color: $font-white;
+    }
+    &__button {
+      margin-top: 45px;
+      width: 100%;
+      height: 60px;
+      border: 4px solid $font-white;
+      color: $font-white;
+      background: rgba(255, 255, 255, 0);
+      font-size: 35px;
+      border-radius: 25px;
+      &:hover {
+        background: $font-white;
+        color: $gold;
+      }
+    }
+  }
+}
