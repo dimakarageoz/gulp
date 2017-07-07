@@ -1,0 +1,41 @@
+@keyframes unhiddenBlock {
+    from { opacity: 0;}
+    to {opacity: .7;}
+}
+
+@keyframes grow {
+    50% {
+        -ms-transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        -ms-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    // from { width: 60px; height: 60px; margin: 30px; }
+    // to { 
+    //     width: 80px; 
+    //     height: 80px;
+    //     margin: 20px; }
+}
+
+.up-button {
+    background: rgba(0,0,0,0);
+    position:fixed;
+    z-index: 9999;
+    opacity: .7;
+    border: 2px solid white;
+    border-radius: 10%;
+    right: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 60px;
+    margin: 30px;
+    animation-name: unhiddenBlock;
+    animation-duration: .5s;
+    &:hover {
+      animation: grow 1s ease forwards;//cubic-bezier(.45,-0.67,.53,1.63) forwards;
+    }
+}

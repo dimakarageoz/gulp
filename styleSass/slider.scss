@@ -1,6 +1,7 @@
 .slider-box {
   width: 800px;
   height: 470px;
+  margin-bottom: 100px;
   background: white;
   overflow: hidden;
   display: flex;
@@ -41,6 +42,11 @@
     }
   }
 }
+.slider__img {
+  width: 800px;
+  height: 470px;
+}
+
 .move-buttons-div {
     display: flex;
     flex-direction: row;

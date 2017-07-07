@@ -7,6 +7,7 @@ var browser = require('browser-sync').create();
 var remember = require('gulp-remember');
 var babel = require('gulp-babel');
 var cached = require('gulp-cached');
+var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var path = require('path');
@@ -27,7 +28,7 @@ gulp.task('listen_sass_css', function(){
 })
 
 gulp.task('js_with_babel', function(){
-  return gulp.src('js/**/*.*', {since: gulp.lastRun('js_with_babel')})
+  return gulp.src('src/js/**/*.*', {since: gulp.lastRun('js_with_babel')})
   .pipe(plumber({errorHandler: notify.onError(function (err) {
     return {
       titel: 'JavaScript',
@@ -38,6 +39,7 @@ gulp.task('js_with_babel', function(){
   .pipe(babel({
     presets: ['es2015', 'react']
   }))
+  .pipe(concat('index.js'))
   .pipe(gulp.dest('public/js'))
 })
 
@@ -54,7 +56,7 @@ gulp.task('watch_sass', function(){
     })
 })
 gulp.task('watch_js', function(){
-  gulp.watch('js/**/*.*', gulp.series('js_with_babel')).on(
+  gulp.watch('src/js/**/*.*', gulp.series('js_with_babel')).on(
     'unlink', function(filename) {
       remember.forget('script', path.resolve(filename));
       delete cached.caches.styles[path.resolve(filename)];

@@ -2,17 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Anton|Cabin" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://fb.me/react-15.0.0.js"></script>
     <script src="https://fb.me/react-dom-15.0.0.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.0.20/browser.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.0.20/browser.min.js"></script>
     <link rel="stylesheet" href="./styleClear/clear-style.css">
     <link rel="stylesheet" href="./style/index.css">
   </head>
   <body>
-    <div class="blocks-container">
+    <div class="blocks-container" id="container">
 
       <div class="app-menu">
           <p class="app-menu__main-item">Log in</p>
@@ -32,14 +32,12 @@
       </div>
       </div>
 
-      <div class="header">
+      <div class="header parallax" id="header">
         <div class="header__second-div">
           <p class="header__second-div__title">Title or news name</p>
-          <p class="header__second-div__text">
-            Summers span decades. Winters can last a lifetime. And the struggle for the Iron Throne continues.
-            It stretches from the south, where heat breeds plots, lusts and intrigues, to the vast and savage eastern lands,
-            where a young queen raises an army. All the while, in the frozen north, an 800-foot wall of ice precariously protects
-             the war-ravaged kingdom </p>
+          <button class="header__second-div__button">
+            Know more
+          </button>
         </div>
       </div>
       <div class="content">
@@ -47,7 +45,7 @@
           GALLERY
         </p>
         <p class="content__title-second-text">
-          My slider
+          Slider
         </p>
       <div class="move-buttons-div">
         <p id="left-slider-button">
@@ -63,7 +61,7 @@
           </div>
       </div>
     </div>
-      <div class="form">
+      <div class="form parallax" id ="form">
         <p class="form__title">
           Login and go to new adventures
         </p>
@@ -88,6 +86,6 @@
     <div id="root"></div>
   </div>
 
-  <script tyle="text/babel" src="./js/slider.js"></script>
+  <script tyle="text/babel" src="./js/index.js"></script>
   </body>
 </html>

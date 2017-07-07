@@ -40,11 +40,12 @@
       border-radius: 25px; }
       .form__div__button:hover {
         background: #d1d1d1;
-        color: #b77110; }
+        color: #4361c5; }
 
 .slider-box {
   width: 800px;
   height: 470px;
+  margin-bottom: 100px;
   background: white;
   overflow: hidden;
   display: flex;
@@ -77,6 +78,10 @@
     .slider-box__scroll-button-right:hover {
       background: rgba(0, 0, 0, 0.4); }
 
+.slider__img {
+  width: 800px;
+  height: 470px; }
+
 .move-buttons-div {
   display: flex;
   flex-direction: row; }
@@ -88,34 +93,48 @@
     color: rgba(255, 255, 255, 0.3);
     font-size: 50px; }
 
+@keyframes hidden {
+  from {
+    background: rgba(255, 255, 255, 0.2); }
+  to {
+    background: rgba(255, 255, 255, 0.7); } }
+
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(http://www.gandex.ru/upl/oboi/gandex.ru-18509_889fe17f79d5994f27cd60eddcd23d40.jpg);
-  background-size: cover;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .header__second-div {
     width: 450px;
     height: 250px;
     margin-left: 30px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 40px;
     color: white; }
     .header__second-div__title {
-      font-family: 'Anton', sans-serif;
-      font-size: 50px;
-      margin: 10px auto;
-      -webkit-transform: scaleY(2);
-      -ms-transform: scaleY(2);
-      -o-transform: scaleY(2);
-      transform: scaleY(2); }
-    .header__second-div__text {
-      margin: 30px auto;
+      font-family: 'Cabin', sans-serif;
+      font-size: 30px;
+      text-align: center;
+      margin: 10px auto; }
+    .header__second-div__button {
+      margin: 20px auto;
+      width: 270px;
+      font-size: 25px !important;
+      height: 130px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 3px solid white;
+      border-radius: 20px;
       font-size: 19px;
-      word-spacing: 6px;
-      text-align: justify; }
+      word-spacing: 6px; }
+      .header__second-div__button:hover {
+        animation-name: hidden;
+        animation-duration: .3s;
+        background: rgba(255, 255, 255, 0.7); }
 
 .header__img {
   width: 100%;
@@ -133,7 +152,7 @@
     font-size: 46px;
     margin: 70px;
     margin-bottom: 30px;
-    color: #b77110; }
+    color: #4361c5; }
   .content__title-second-text {
     font-size: 160px;
     margin-bottom: 10px;
@@ -179,6 +198,39 @@
     .app-menu__main-item:hover {
       background-color: rgba(255, 255, 255, 0.1); }
 
+@keyframes unhiddenBlock {
+  from {
+    opacity: 0; }
+  to {
+    opacity: .7; } }
+
+@keyframes grow {
+  50% {
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+.up-button {
+  background: transparent;
+  position: fixed;
+  z-index: 9999;
+  opacity: .7;
+  border: 2px solid white;
+  border-radius: 10%;
+  right: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 60px;
+  margin: 30px;
+  animation-name: unhiddenBlock;
+  animation-duration: .5s; }
+  .up-button:hover {
+    animation: grow 1s ease forwards; }
+
 * {
   font-family: 'ABeeZee', sans-serif; }
 
@@ -186,3 +238,13 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.hidden {
+  display: none; }

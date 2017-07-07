@@ -1,33 +1,47 @@
+@keyframes hidden {
+  from { background: rgba(255,255,255, .2); }
+  to { background: rgba(255,255,255, .7); }
+}
+
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(http://www.gandex.ru/upl/oboi/gandex.ru-18509_889fe17f79d5994f27cd60eddcd23d40.jpg);
-  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   &__second-div{
     width: 450px;
     height: 250px;
     margin-left: 30px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 40px;
     color: white;
     &__title{
-      font-family: 'Anton', sans-serif;
-      font-size: 50px;
+      font-family: 'Cabin', sans-serif;
+      font-size: 30px;
+      text-align: center;
       margin: 10px auto;
-      -webkit-transform: scaleY(2);
-      -ms-transform: scaleY(2);
-      -o-transform: scaleY(2);
-      transform: scaleY(2);
     }
-    &__text{
-      margin: 30px auto;
+    &__button{
+      margin: 20px auto;
+      width: 270px;
+      font-size: 25px !important;
+      height: 130px;
+      background: rgba(255,255,255, .2);
+      border: 3px solid white;
+      border-radius: 20px; 
       font-size: 19px;
       word-spacing: 6px;
-      text-align: justify;
+      &:hover {
+        animation-name: hidden;
+        animation-duration: .3s;
+        background: rgba(255,255,255, .7);
+      }
     }
   }
 }
